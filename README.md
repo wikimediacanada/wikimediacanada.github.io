@@ -1,4 +1,4 @@
-# www
+# wikimediacanada.github.io
 Transaction portion of wikimedia.ca
 
 ## Overview
