@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3F3F3;
+  margin: 1em;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: 0px;
+  border-bottom: 1px solid blue;
+}
+
+img.logo {
+  display: flex;
+  float: left;
+  max-width: 25%;
+  height: auto;
+}
+
+.langlink {
+  float: right;
+}
+
+.title {
+  text-align: center;
+  padding-top: 75px;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+#main {
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+
+header,
+footer,
+#main > article,
+#main > leftmargin,
+#main > rightmargin {
+  margin: 4px;
+  padding: 1em;
+}
+
+#main > article {
+  background: #F3F3F3;
+  -webkit-flex: 4 1 0;
+  flex: 4 1 0;
+  -webkit-order: 2;
+  order: 2;
+}
+
+#green {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 1em;
+}
+
+#join {
+  background-color: #CCE7CD;
+  border: 1px solid #5EAC58;
+  padding: 1em;
+  width: 60%;
+}
+
+#donate {
+  background-color: #CCE7CD;
+  border: 1px solid #5EAC58;
+  padding: 1em;
+  width: 40%;
+}
+
+#join > h2, #donate > h2 {
+  text-align: center;
+}
+
+#why {
+  background: #F3F3F3;
+}
+
+#main > leftmargin,
+#main > rightmargin {
+  background: #F3F3F3;
+}
+
+#main > leftmargin {
+  -webkit-order: 1;
+  order: 1;
+}
+
+#main > rightmargin {
+  -webkit-order: 3;
+  order: 3;
+}
+
+header, footer {
+  display: block;
+  min-height: 80px;
+}
+
+header {
+  background: #F3F3F3;
+}
+
+footer {
+  background: #DDD;
+  font-size: 75%;
+  font-style: italic;
+  padding: 0.5em;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  margin: 0 auto;
+}
+
+.flex-outer li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label {
+  padding: 8px;
+}
+
+.flex-outer li p {
+  padding: 8px;
+  align-items: center;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + * {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='radio']) {
+  padding: 15px;
+}
+
+span.break:before {
+  content: "\A";
+  white-space: pre;
+}
+
+select {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1.4rem;
+  border: 0;
+  border-radius: 0;
+}
+
+.radio-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 0.5em;
+}
+
+input[type="radio"] {
+  align-self: center;
+}
+
+input[type='text'] {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+#donate > form {
+  text-align: center;
+}
+
+.btn {
+  padding: 16px;
+  border: 1px solid #333;
+  background: #333;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+
+.btn:hover {
+  background: yellow;
+  color: #000;
+  border: 1px solid #333;
+}
+
+.btn:focus {
+  background: yellow;
+  color: #000;
+  border: 1px solid #333;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@media only screen and (max-width: 768px) {
+
+  body {
+    font-size: 1.2rem;
+    margin: 0em;
+  }
+
+  #main, #page {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+  }
+
+  #main > article, #main > leftmargin, #main > rightmargin {
+    /* Return them to document order */
+    -webkit-order: 0;
+    order: 0;
+  }
+
+  #main > article {
+    padding 0.5em;
+  }
+
+  #main > leftmargin, #main > rightmargin {
+    /* Hide them */
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    order: 3;
+  }
+
+  #green {
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    padding-bottom: 1em;
+    -webkit-order: 0;
+    order: 0;
+  }
+
+  #join, #donate {
+    width: 100%;
+    padding: 1em;
+    border: 0px;
+  }
+
+  #join {
+    border-bottom: 1px solid #5EAC58;
+  }
+
+  #donate {
+    border-top: 1px solid #5EAC58;
+  }
+
+  br {
+    content: ' ';
+  }
+
+  br:after {
+    content: ' ';
+  }
+
+  select, input[type='text'] {
+    font-size: 1.0rem;
+  }
+
+  header, footer {
+    min-height: 50px;
+  }
+
+  footer {
+    position: sticky;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 100%;
+    margin-top: 2em;
+  }
+}
