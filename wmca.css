@@ -228,7 +228,7 @@ input[type='text'] {
 }
 
 .btn {
-  padding: 16px;
+  padding: 1.0rem;
   border: 1px solid #333;
   background: #333;
   color: #fff;
@@ -236,7 +236,7 @@ input[type='text'] {
   letter-spacing: .09em;
   border-radius: 2px;
   font-weight: bold;
-  font-size: 1.0rem;
+  font-size: 1.6em;
 }
 
 .btn:hover {
