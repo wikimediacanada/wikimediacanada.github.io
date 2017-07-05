@@ -223,6 +223,12 @@ input[type='text'] {
   font-size: 1.4rem;
 }
 
+.btn-item {
+  display: flex;
+  padding-top: 1.5rem;
+  justify-content: center;
+}
+
 #donate > form {
   text-align: center;
 }
