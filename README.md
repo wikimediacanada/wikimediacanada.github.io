@@ -16,7 +16,7 @@ The purpose of this website is to provide an area outside the [www.wikimedia.ca]
 
 ## History
 
-> **Note:** Dates are specified in [ISO 8601 ordinal date format](https://www.iso.org/iso-8601-date-and-time-format.html).
+> **Note:** Dates are specified in [ISO 8601 date format](https://www.iso.org/iso-8601-date-and-time-format.html).
 
 ### 2017-07-04
 * Complete site rewrite.
