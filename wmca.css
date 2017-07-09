@@ -220,7 +220,7 @@ input[type='text'] {
 .btn {
   padding: 1.0rem;
   border: 1px solid #333;
-  background: #000;
+  background: #333;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: .09em;
