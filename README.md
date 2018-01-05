@@ -18,6 +18,13 @@ The purpose of this website is to provide an area outside the [www.wikimedia.ca]
 
 > **Note:** Dates are specified in [ISO 8601 date format](https://www.iso.org/iso-8601-date-and-time-format.html).
 
+### 2018-01-04
+* Change the form fields for 2018-2019
+
+### 2017-10-30
+* Modify for new PayPal account (t@wm.ca)
+* Change the domain to paypal.wikimedia.ca
+
 ### 2017-07-09
 * Update domain information to use this repository.
 
